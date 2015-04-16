@@ -22,20 +22,20 @@ var Api = ResourceApiUtils.create('<route-name>');
 Requests
 --------
 
-#Get:
+##Get:
 
 ```sh
-Api.get(id).then(function(response) {
+Api.get(id, params).then(function(response) {
   //success 
 }, function(error) {
   //error
 });
 ```
 
-#Post: 
+##Post: 
 
 ```sh
-Api.post(data).then(function(response) {
+Api.post(payload).then(function(response) {
   //success 
 }, function(error) {
   //error
@@ -43,7 +43,7 @@ Api.post(data).then(function(response) {
 
 ```
 
-#Put:
+##Put:
 
 ```sh
 Api.put(id, data).then(function(response) {
@@ -51,4 +51,72 @@ Api.put(id, data).then(function(response) {
 }, function(error) {
   //error
 });
+
+```
+##Get List: 
+
+```sh
+Api.getList().then(function(response) {
+  //success 
+}, function(error) {
+  //error
+});
+
+```
+
+##Remove: 
+
+```sh
+Api.remove(id).then(function(response) {
+  //success 
+}, function(error) {
+  //error
+});
+
+```
+
+##Custom Get: 
+
+```sh
+Api.customGet(suffix, params).then(function(response) {
+  //success 
+}, function(error) {
+  //error
+});
+
+```
+
+##Custom Delete: 
+
+```sh
+Api.customDelete(suffix, params).then(function(response) {
+  //success 
+}, function(error) {
+  //error
+});
+
+```
+
+##Custom Post: 
+
+```sh
+Api.customPost(suffix, data, params).then(function(response) {
+  //success 
+}, function(error) {
+  //error
+});
+
+```
+
+##Custom Put: 
+
+```sh
+Api.customPut(suffix, data, params).then(function(response) {
+  //success 
+}, function(error) {
+  //error
+});
+
+```
+
 
