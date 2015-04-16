@@ -46,7 +46,7 @@ Api.post(payload).then(function(response) {
 ##Put:
 
 ```sh
-Api.put(id, data).then(function(response) {
+Api.put(id, payload).then(function(response) {
   //success
 }, function(error) {
   //error
@@ -100,7 +100,7 @@ Api.customDelete(suffix, params).then(function(response) {
 ##Custom Post: 
 
 ```sh
-Api.customPost(suffix, data, params).then(function(response) {
+Api.customPost(suffix, payload, params).then(function(response) {
   //success 
 }, function(error) {
   //error
@@ -111,7 +111,7 @@ Api.customPost(suffix, data, params).then(function(response) {
 ##Custom Put: 
 
 ```sh
-Api.customPut(suffix, data, params).then(function(response) {
+Api.customPut(suffix, payload, params).then(function(response) {
   //success 
 }, function(error) {
   //error
